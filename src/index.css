@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body.theme1 {
+  --bg: #ffffff;
+  --text: #111827;
+  --font: "Inter", sans-serif;
+}
+
+body.theme2 {
+  --bg: #121212;
+  --text: #f9f9f9;
+  --font: "Georgia", serif;
+}
+
+body.theme3 {
+  --bg: #fef6e4;
+  --text: #5f0f40;
+  --font: "Pacifico", cursive;
+}
+
+body {
+  background-color: var(--bg);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
